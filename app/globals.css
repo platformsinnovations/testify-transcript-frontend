@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  /* TMS Custom Colors */
+  --color-tms-darkGreen: #025158;
+  --color-tms-lightGreen: #04BF68;
+  --color-tms-yellow: #FDB52A;
+  --color-tms-text: #013F4C;
+  --color-tms-admin: #00262D;
+  --color-tms-bg-main: #F8F9FA;
+  --color-tms-admin-dash: #013F4C;
+  --color-tms-gray-50: #D9E0DE;
+  --color-tms-gray-10: #F2F7F5;
+  --color-tms-gray-5: #ACBABC;
+  --color-tms-navy: #1B2559;
+  --color-tms-gray-20: #61787B;
+  --color-tms-no-zone: #4F4F4F;
+  --color-tms-no-zone2: #A7A7A7;
+  --color-tms-theader: #F3FDF8;
+  --color-tms-landing-sky: #81DFB3;
+  --color-tms-landing-yellow: #FDB52A;
+  --color-tms-landing-blue: #28B9F2;
+  --color-tms-landing-1: #04BF680D;
+  --color-tms-landing-2: #FFEEEE26;
+  --color-tms-testimonial-green: #2ECA81;
+  --color-tms-testimonialQR-gray: #ECECEE;
+  --color-tms-landing-3: #CDF2E1;
+  --color-tms-landing-4: #FFF0D4;
+  --color-tms-landing-5: #D4F1FC;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
